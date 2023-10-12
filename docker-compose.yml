@@ -1,0 +1,11 @@
+version: "3.9"
+name: db-hw-1
+services:
+  postgres:
+    image: postgres:13.4
+    environment:
+      POSTGRES_DB: "db"
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "postgres"
+    ports:
+      - "5432:5432"
